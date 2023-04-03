@@ -17,9 +17,9 @@ echo 'Moving SE_250m'
 mv ./SRTM_NE_250m_TIF/SRTM_SE_250m.tif SRTM_SE_250m.tif
 echo 'Moving W_250m'
 mv ./SRTM_NE_250m_TIF/SRTM_W_250m.tif SRTM_W_250m.tif
-../create-tiles.sh ./SRTM_NE_250m_TIF/SRTM_NE_250m.tif 10 10
-../create-tiles.sh ./SRTM_SE_250m_TIF/SRTM_SE_250m.tif 10 10
-../create-tiles.sh ./SRTM_W_250m_TIF/SRTM_W_250m.tif 10 20
+../create-tiles.sh SRTM_NE_250m.tif 10 10
+../create-tiles.sh SRTM_SE_250m.tif 10 10
+../create-tiles.sh SRTM_W_250m.tif 10 20
 rm -rf SRTM_NE_250m.tif SRTM_SE_250m.tif SRTM_W_250m.tif *.rar
 
 cd $CUR_DIR
